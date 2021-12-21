@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <title>Wishlist</title>
+ 
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+  
+    <div class="container" id="container">
+        <div id="menu">
+            <div class="title">
+              <img src="images/foodielogo.png" style="height: 100px; width: 100px; margin-top: 10px;" alt="">
+            </div>
+            <div class="menu-item">
+                <a href="index.html">About</a>
+                <a href="index.html">Services</a>
+                <a href="index.html">Your Orders</a>
+                <a href="index.html">Wishlists</a>
+                <a href="index.html">Cart</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">Checkout</a>
+            </div>
+        </div>
+
+
+      <div id="CRUD">
+        <div class="container mt-5">
+           
+            <div class="main row">
+                <strong>Book Rating</strong>
+              <div class="col-sm-12 col-md-4">
+                <form id="book-form" autocomplete="off">
+                  <div class="form-group">
+                    <label for="title">Name</label>
+                    <input type="text" id="title" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Category</label>
+                    <input type="text" id="author" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="isbn">Rating</label>
+                    <input type="text" id="isbn" class="form-control">
+                  </div>
+      
+                  <input type="submit" value="Submit" class="btn btn-success btn-block add-btn">
+                </form>
+              </div>
+              <div class="col-sm-12 col-md-8">
+                <table class="table table-striped mt-5">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Category</th>
+                      <th>Rating</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="book-list">
+                    <tr><td>Harry Potter</td>
+                    <td>Roman</td>
+                    <td>5</td>
+                    <td><a href="#" class="btn btn-success btn-sm edit">Edit</a></td>
+                    <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            </div>
+        </div>
+        
+     
+
+    <script src="wishlistjs.js"></script>
+</body>
+</html>

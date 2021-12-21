@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<img src="sasa1.jpg" class="background" />
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="welkom_animate__headShake">Welcome !</h1>
+            <h1 class="form__title">Sign in to
+            </h1>
+            <p>Lorem Ipsum is simply</p>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group ">
+                <h1 class="formname ">User name</h1>
+                <input type="text" class="form__input " autofocus placeholder="Username or email">
+                <div class="form__input-error-message "></div>
+            </div>
+            <div class="form__input-group">
+                <h1 class="formname">Password</h1>
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            <button class="form__button animate__bounceOut" type="submit">Continue</button>
+            <p class="form__text">
+                <a href="index.html" class="form__link">login without account</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don’y have an Account ? <span style="color: black; font-style:bold
+    ;">Register</span></a>
+            </p>
+        </form>
+   
+        
+        <form class="form form--hidden" id="createAccount">
+           
+            <h1 class="form__title">Sign up to
+            </h1>
+           
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <h1 class="formname">User name</h1>
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message "></div>
+            </div>
+            <div class="form__input-group">
+                <h1 class="formname">Email</h1>
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <h1 class="formname">Password</h1>
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <h1 class="formname">Confirm password</h1>
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+                
+            </div>
+            <button class="form__button animate__bounceOut" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+        
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
