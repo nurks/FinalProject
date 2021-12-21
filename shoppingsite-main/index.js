@@ -284,10 +284,6 @@ function selectTaste(){
     
         listCard.appendChild(listImg);
         listCard.appendChild(listName);
-
-        var cloneListCard= listCard.cloneNode(true);
-        categoryList.appendChild(listCard);
-        document.querySelector('.category-header').appendChild(cloneListCard)
     })
 }
 selectTaste();
